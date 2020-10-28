@@ -39,7 +39,9 @@ pip freeze > requirements.txt
 ```
 
 # Q5, Q6b
+You can execute the notebook and see intial, intemetiate, and final results by the binder link.
 
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Myunghee13/DSCI560_HW2/master?filepath=https%3A%2F%2Fgithub.com%2FMyunghee13%2FDSCI560_HW2%2Fblob%2Fmaster%2FVisualization.ipynb)
 
 # Q6a. Instructions for executing the project on your computer
 1. Install Python 3.7.9
@@ -79,5 +81,5 @@ deactivate
 ```
 11. You can also execute these scripts with the notebook at once.
 
-
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Myunghee13/DSCI560_HW2/master?filepath=https%3A%2F%2Fgithub.com%2FMyunghee13%2FDSCI560_HW2%2Fblob%2Fmaster%2FVisualization.ipynb)
 
