@@ -51,11 +51,11 @@ You can execute the notebook file "Visualization.ipynb" in Binder, and see intia
 # Q6a. Instructions for executing the project on your computer
 1. Install Python 3.7.8
 2. Open your terminal and go to the directory you want to download this repository
-3. Download this repository and go to the folder you downloaded
+3. Download this repository in the directory
 ```
 git clone https://github.com/Myunghee13/DSCI560_HW2.git
 ```
-4. Install virtualenv
+4. Go to the repository folder you downloaded and install virtualenv
 ```
 pip install virtualenv
 ```
