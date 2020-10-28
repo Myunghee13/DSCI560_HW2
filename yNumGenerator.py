@@ -1,16 +1,25 @@
 # 1. b. Generate new numbers from the original 1000 using the equation y=3x+6
 import re
+import matplotlib.pyplot as plt
+from pathlib import Path
+
+output_folder = Path("output")
 
 # read a_result
-result1 = list()
-with open("xNumbers.txt", "r") as f: 
-    lines = f.readlines()
-    for num in lines:
-        result1.append(int(re.sub(r"\n", "", num)))
+with open(output_folder / "xNumbers.txt",'r') as f:
+    xNum = [int(ele.strip()) for ele in f.readlines()]
 
-with open("yNumbers.txt", "w") as f: 
-    for num in result1:
-        f.write(str(3*num+6)+'\n')  # y = 3x+6        
+yNum = list()
+with open(output_folder / "yNumbers.txt", "w") as f: 
+    for num in xNum:
+        ynum = 3*num+6
+        yNum.append(ynum)
+        f.write(str(ynum)+'\n')  # y = 3x+6        
 
-
+# drawing histogram of generated y values
+histogram = plt.hist(yNum,edgecolor='black')
+plt.title("Histogram of y values")
+plt.xlabel('y values')
+plt.ylabel('count')
+plt.show()
 

@@ -1,25 +1,23 @@
 # 1. c. Visualize the results
 
-import re
-# read a_result, b_result
-a_result = list()
-with open("xNumbers.txt", "r") as f: 
-    lines = f.readlines()
-    for num in lines:
-        a_result.append(int(re.sub(r"\n", "", num)))
-b_result = list()
-with open("yNumbers.txt", "r") as f: 
-    lines = f.readlines()
-    for num in lines:
-        b_result.append(int(re.sub(r"\n", "", num)))
-
-# visualize graph
+from pathlib import Path
 import matplotlib.pyplot as plt
 
+output_folder = Path("output")
+
+# read intermediate results
+with open(output_folder / "xNumbers.txt",'r') as f:
+    xNum = [int(ele.strip()) for ele in f.readlines()]
+
+with open(output_folder / "yNumbers.txt",'r') as f:
+    yNum = [int(ele.strip()) for ele in f.readlines()]
+
+# visualize graph
+
 fig = plt.figure()
-plt.scatter(a_result, b_result)
+plt.scatter(xNum, yNum)
 plt.xlabel('x')
 plt.ylabel('y')
 plt.show()
 
-fig.savefig('xyGraph.png')
+fig.savefig(output_folder / 'xyGraph.png')
