@@ -17,9 +17,10 @@ with open(output_folder / "yNumbers.txt", "w") as f:
         f.write(str(ynum)+'\n')  # y = 3x+6        
 
 # drawing histogram of generated y values
-histogram = plt.hist(yNum,edgecolor='black')
+fig = plt.figure()
+plt.hist(yNum,edgecolor='black')
 plt.title("Histogram of y values")
 plt.xlabel('y values')
 plt.ylabel('count')
 plt.show()
-
+fig.savefig(output_folder / 'histogramYvalues.png')

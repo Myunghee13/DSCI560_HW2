@@ -16,8 +16,10 @@ with open(output_folder / "xNumbers.txt", "w") as f:
 # drawing histogram of generated random numbers
 import matplotlib.pyplot as plt
 
-histogram = plt.hist(xNum,edgecolor='black')
+fig = plt.figure()
+plt.hist(xNum,edgecolor='black')
 plt.title("Histogram of 1000 random numbers")
 plt.xlabel('random number values')
 plt.ylabel('count')
 plt.show()
+fig.savefig(output_folder / 'histogramXvalues.png')

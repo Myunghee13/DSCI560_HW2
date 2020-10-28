@@ -19,5 +19,4 @@ plt.scatter(xNum, yNum)
 plt.xlabel('x')
 plt.ylabel('y')
 plt.show()
-
 fig.savefig(output_folder / 'xyGraph.png')
