@@ -3,7 +3,7 @@ import random
 
 random.seed(30)
 
-with open("a_result.txt", "w") as f: 
+with open("xNumbers.txt", "w") as f: 
     for i in range(1000):
         num = random.randint(0, 100)
         f.write(str(num)+'\n')

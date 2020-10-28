@@ -3,12 +3,12 @@
 import re
 # read a_result, b_result
 a_result = list()
-with open("a_result.txt", "r") as f: 
+with open("xNumbers.txt", "r") as f: 
     lines = f.readlines()
     for num in lines:
         a_result.append(int(re.sub(r"\n", "", num)))
 b_result = list()
-with open("b_result.txt", "r") as f: 
+with open("yNumbers.txt", "r") as f: 
     lines = f.readlines()
     for num in lines:
         b_result.append(int(re.sub(r"\n", "", num)))
@@ -22,4 +22,4 @@ plt.xlabel('x')
 plt.ylabel('y')
 plt.show()
 
-fig.savefig('visulize.png')
+fig.savefig('xyGraph.png')
