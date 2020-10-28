@@ -1,7 +1,12 @@
-# DSCI560_HW4
-
+# DSCI560_HW2
 <a href="https://zenodo.org/badge/latestdoi/298509821"><img src="https://zenodo.org/badge/298509821.svg" alt="DOI"></a>
 
+# DSCI560_HW4
+## Description of the project
+1. xNumGenerator.py: Generate 1000 random numbers over the range 0-100 for X axis
+2. yNumGenerator.py: Generate new numbers for Y axis from random numbers of step 1 using the equation y=3x+6
+3. visualizeXY.py: Generate visualization results
+4. Visualizatin.ipynb: call all previous *.py files and show the visualizations of intial, intemetiate, and final results
 
 # Q 1-3: Screenshot
 
@@ -10,7 +15,7 @@
 </p>
 
 # Q 4: Dependencies of my virtual environment 
-a. Python version: 3.7.9
+a. Python version: 3.7.8
 1. The package I manually installed: matplotlib 3.3.2 by the command
 ```
 pip install matplotlib
@@ -39,12 +44,12 @@ pip freeze > requirements.txt
 ```
 
 # Q5, Q6b
-You can execute the notebook and see intial, intemetiate, and final results by the binder link.
+You can execute the notebook file "Visualization.ipynb" in Binder, and see intial, intemetiate, and final results.
 
-
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Myunghee13/DSCI560_HW2/master)
 
 # Q6a. Instructions for executing the project on your computer
-1. Install Python 3.7.9
+1. Install Python 3.7.8
 2. Open your terminal and go to the directory you want to download this repository
 3. Download this repository and go to the folder you downloaded
 ```
@@ -79,7 +84,7 @@ python visualizeXY.py
 ```
 deactivate
 ```
-11. You can also execute these scripts with the notebook at once.
+11. You can also execute these scripts at once with the notebook file "Visualization.ipynb" in Binder.
 
-
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Myunghee13/DSCI560_HW2/master)
 
